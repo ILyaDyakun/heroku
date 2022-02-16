@@ -14,3 +14,8 @@
   font-family: 'Roboto Condensed', sans-serif;
   color: #777;
 }
+
+.label {
+  color: black;
+  font-size: 14px;
+}

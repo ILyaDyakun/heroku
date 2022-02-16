@@ -1,1 +1,23 @@
-<p>login works!</p>
+<div class="form">
+    <h3 class="form_title">Sign in</h3>
+    <app-input
+        [label]="'Email'"
+        [type]="'text'"
+        [name]="'email'"
+        [className]="'form_input'"
+    ></app-input>
+
+    <app-input
+        [label]="'Password'"
+        [type]="'text'"
+        [name]="'passwordpassword'"
+        [className]="'form_input'"
+    ></app-input>
+
+    <app-button 
+        [type]="'button'"
+        [isDisabled] = "false"
+        [className] = "'btn_login'"
+        [text]="'Sign In'"
+    ></app-button>
+</div>
