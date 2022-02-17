@@ -1,0 +1,31 @@
+{
+  "games": [
+    {
+      "id": 1,
+      "title": "PUBG",
+      "description": "Hell’s armies have invaded Earth. Become the Slayer in an epic single-player campaign to conquer demons across dimensions and stop the final destruction of humanity. The only thing they fear... is you.",
+      "photo": "pubg",
+      "price": 750,
+      "genre": "adventure",
+      "isAdded": false
+    },
+    {
+      "id": 2,
+      "title": "CrossFire",
+      "description": "Hell’s armies have invaded Earth. Become the Slayer in an epic single-player campaign to conquer demons across dimensions and stop the final destruction of humanity. The only thing they fear... is you.",
+      "photo": "crossfire",
+      "price": 650,
+      "genre": "action",
+      "isAdded": false
+    },
+    {
+      "id": 3,
+      "title": "MineCraft",
+      "description": "Hell’s armies have invaded Earth. Become the Slayer in an epic single-player campaign to conquer demons across dimensions and stop the final destruction of humanity. The only thing they fear... is you.",
+      "photo": "minecraft",
+      "price": 600,
+      "genre": "indie",
+      "isAdded": false
+    }
+  ]
+}

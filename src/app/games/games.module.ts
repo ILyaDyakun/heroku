@@ -2,14 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { GamesComponent } from './games/games.component';
 
-
-
 @NgModule({
   declarations: [
-    GamesComponent
+    GamesComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,
   ]
 })
 export class GamesModule { }
