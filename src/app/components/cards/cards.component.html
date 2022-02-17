@@ -8,10 +8,10 @@
 </div>
 
 <h2>Library</h2>
-<div *ngIf="isAdded" class="card_container">
-  <app-card
+<div *ngIf="isAdded === true" class="card_container">
+  <app-library-card
     *ngFor="let game of games"
+    [isAdded]="game.isAdded"
     [game]="game"
-    (onToggleIsAdded)="addToLibrary(game)"
-  ></app-card>
+  ></app-library-card>
 </div>

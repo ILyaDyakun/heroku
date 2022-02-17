@@ -9,6 +9,7 @@ import { ButtonComponent } from './components/button/button.component';
 import { InputComponent } from './components/input/input.component';
 import { CardComponent } from './components/card/card.component';
 import { CardsComponent } from './components/cards/cards.component';
+import { LibraryCardComponent } from './components/library-card/library-card.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +19,18 @@ import { CardsComponent } from './components/cards/cards.component';
     InputComponent,
     CardComponent,
     CardsComponent,
+    LibraryCardComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
+  ],
+  exports: [
+    ButtonComponent,
+    CardComponent,
+    CardsComponent,
+    LibraryCardComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -16,7 +16,7 @@
       "photo": "crossfire",
       "price": 650,
       "genre": "action",
-      "isAdded": false
+      "isAdded": true
     },
     {
       "id": 3,
