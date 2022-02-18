@@ -1,4 +1,4 @@
-<div class="card_body">
+<div *ngIf="game.isAdded === true" class="card_body">
     <div class="card_img">
       <img src='{{ "../assets/img/" + game.photo + ".jpg" }}'>
       <div class="card_title">{{ game.title }}</div>

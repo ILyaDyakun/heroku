@@ -1,0 +1,7 @@
+<div class="card_container">
+  <app-card
+    *ngFor="let game of games"
+    [game]="game"
+    (onToggleIsAdded)="addToLibrary(game)"
+  ></app-card>
+</div>

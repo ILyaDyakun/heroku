@@ -3,13 +3,13 @@ import { GameService } from 'src/app/services/game.service';
 import { Game } from 'src/app/Game';
 
 @Component({
-  selector: 'app-cards',
-  templateUrl: './cards.component.html',
-  styleUrls: ['./cards.component.css']
+  selector: 'app-games-container',
+  templateUrl: './games-container.component.html',
+  styleUrls: ['./games-container.component.css']
 })
-export class CardsComponent implements OnInit {
+export class GamesContainerComponent implements OnInit {
   games: Game[] = [];
-  isAdded: boolean = false;
+  isAdded: boolean;
 
   constructor(private gameService: GameService) { }
 

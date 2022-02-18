@@ -8,7 +8,7 @@ import { Game } from 'src/app/Game';
 })
 export class CardComponent implements OnInit {
   @Input() game: Game;
-  @Input() isAdded: boolean = false;
+  @Input() isAdded: boolean;
   @Output() onToggleIsAdded: EventEmitter<Game> = new EventEmitter();
 
   constructor() {}

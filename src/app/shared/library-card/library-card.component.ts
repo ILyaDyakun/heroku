@@ -8,7 +8,7 @@ import { Game } from 'src/app/Game';
 })
 export class LibraryCardComponent implements OnInit {
   @Input() game: Game;
-  @Input() isAdded: boolean = false;
+  @Input() isAdded: boolean;
 
 
   constructor() {}
