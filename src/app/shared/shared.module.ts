@@ -7,7 +7,6 @@ import { GamesContainerComponent } from './games-container/games-container.compo
 import { LibraryCardComponent } from './library-card/library-card.component';
 import { CardComponent } from './card/card.component';
 import { LibraryContainerComponent } from './library-container/library-container.component';
-import { GamesComponent } from '../games/games/games.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +24,8 @@ import { GamesComponent } from '../games/games/games.component';
   exports: [
     CommonModule,
     HttpClientModule,
+    ButtonComponent,
+    InputComponent,
     GamesContainerComponent,
     CardComponent,
     LibraryCardComponent,

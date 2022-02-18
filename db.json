@@ -7,7 +7,7 @@
       "photo": "pubg",
       "price": 750,
       "genre": "adventure",
-      "isAdded": true
+      "isAdded": false
     },
     {
       "id": 2,
@@ -25,7 +25,7 @@
       "photo": "minecraft",
       "price": 600,
       "genre": "indie",
-      "isAdded": true
+      "isAdded": false
     },
     {
       "id": 4,
@@ -34,7 +34,7 @@
       "photo": "fortnite",
       "price": 450,
       "genre": "adventure",
-      "isAdded": true
+      "isAdded": false
     },
     {
       "id": 5,
@@ -47,6 +47,60 @@
     },
     {
       "id": 6,
+      "title": "Roblox",
+      "description": "Hell’s armies have invaded Earth. Become the Slayer in an epic single-player campaign to conquer demons across dimensions and stop the final destruction of humanity. The only thing they fear... is you.",
+      "photo": "roblox",
+      "price": 300,
+      "genre": "indie",
+      "isAdded": false
+    },
+    {
+      "id": 7,
+      "title": "PUBG",
+      "description": "Hell’s armies have invaded Earth. Become the Slayer in an epic single-player campaign to conquer demons across dimensions and stop the final destruction of humanity. The only thing they fear... is you.",
+      "photo": "pubg",
+      "price": 750,
+      "genre": "adventure",
+      "isAdded": false
+    },
+    {
+      "id": 8,
+      "title": "CrossFire",
+      "description": "Hell’s armies have invaded Earth. Become the Slayer in an epic single-player campaign to conquer demons across dimensions and stop the final destruction of humanity. The only thing they fear... is you.",
+      "photo": "crossfire",
+      "price": 650,
+      "genre": "action",
+      "isAdded": false
+    },
+    {
+      "id": 9,
+      "title": "MineCraft",
+      "description": "Hell’s armies have invaded Earth. Become the Slayer in an epic single-player campaign to conquer demons across dimensions and stop the final destruction of humanity. The only thing they fear... is you.",
+      "photo": "minecraft",
+      "price": 600,
+      "genre": "indie",
+      "isAdded": false
+    },
+    {
+      "id": 10,
+      "title": "Fortnite",
+      "description": "Hell’s armies have invaded Earth. Become the Slayer in an epic single-player campaign to conquer demons across dimensions and stop the final destruction of humanity. The only thing they fear... is you.",
+      "photo": "fortnite",
+      "price": 450,
+      "genre": "adventure",
+      "isAdded": false
+    },
+    {
+      "id": 11,
+      "title": "League of Legends",
+      "description": "Hell’s armies have invaded Earth. Become the Slayer in an epic single-player campaign to conquer demons across dimensions and stop the final destruction of humanity. The only thing they fear... is you.",
+      "photo": "league",
+      "price": 900,
+      "genre": "action",
+      "isAdded": false
+    },
+    {
+      "id": 12,
       "title": "Roblox",
       "description": "Hell’s armies have invaded Earth. Become the Slayer in an epic single-player campaign to conquer demons across dimensions and stop the final destruction of humanity. The only thing they fear... is you.",
       "photo": "roblox",
