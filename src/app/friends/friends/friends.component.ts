@@ -33,7 +33,7 @@ export class FriendsComponent implements OnInit {
   }
   onInput(e: any) {
     const value = e.target.value;
-    const regEx = new RegExp(`^${value}`);
+    const regEx = new RegExp(`^${value}`, 'i');
 
     if (value === '') {
       this.isSearching = false;
