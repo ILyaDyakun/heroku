@@ -25,4 +25,12 @@ export class GameService {
     const url = `${this.apiUrl}/${game.id}`;
     return this.http.put<Game>(url, game, httpOptions);
   }
+
+  searchGames(s: string): Observable<Game[]> {
+    if (s) {
+      return this.http.get<Game[]>(`${this.apiUrl}?title_like=${s.trim()}`)
+    } else {
+      return this.http.get<Game[]>(this.apiUrl);
+    }
+  }
 }

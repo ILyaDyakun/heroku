@@ -7,6 +7,7 @@ import { GamesContainerComponent } from './games-container/games-container.compo
 import { LibraryCardComponent } from './library-card/library-card.component';
 import { CardComponent } from './card/card.component';
 import { LibraryContainerComponent } from './library-container/library-container.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,10 +21,12 @@ import { LibraryContainerComponent } from './library-container/library-container
   imports: [
     CommonModule,
     HttpClientModule,
+    FormsModule
   ],
   exports: [
     CommonModule,
     HttpClientModule,
+    FormsModule,
     ButtonComponent,
     InputComponent,
     GamesContainerComponent,

@@ -1,2 +1,22 @@
-<h2>Games</h2>
-<app-games-container></app-games-container>
+<div class="general_container">
+  <h2>Games</h2>
+  <div class="search_container">
+    <app-input
+      className="form_input"
+      type="text"
+      label="Search Games"
+      name="name"
+      [(ngModel)]="name"
+      ngDefaultControl
+    ></app-input>
+    <app-button
+      className="btn_search"
+      text="search"
+      (btnClick)="searchForGames(name)"
+    ></app-button>
+  </div>
+  <div class="grid_container">
+    <app-games-container></app-games-container>
+    <div class="filter_container"></div>
+  </div>
+</div>
