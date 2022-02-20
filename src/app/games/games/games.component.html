@@ -23,7 +23,7 @@
     <div class="filter_container">
       <div class="filter_price">
         <h3>Filter by price</h3>
-        <input min="300" max="1000" value="300" type="range" (input)="price">
+        <input min="300" max="1000" type="range" [(ngModel)]="price">
       </div>
       <div class="filter_tag">
         <h3>Filter by tag</h3>
