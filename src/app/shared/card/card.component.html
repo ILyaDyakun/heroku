@@ -1,4 +1,4 @@
-<div *ngIf="game.isAdded === false" class="card_body">
+<div class="card_body">
   <div class="card_img">
     <img src='{{ "../assets/img/" + game.photo + ".jpg" }}'>
     <div class="card_title">{{ game.title }}</div>
@@ -6,12 +6,22 @@
   </div>
   <div class="card_description">
     <p>{{ game.description }}</p>
-    <div class="btn_container">
+    <div *ngIf="game.isAdded === false" class="btn_container">
       <app-button
         className="btn_library_add"
         text="Add to Library"
         (click)="onToggle(game)"
       ></app-button>
+    </div>
+    <div *ngIf="game.isAdded === true" class="btn_container">
+      <app-button
+          className="btn_download"
+          text="Download"
+        ></app-button>
+        <app-button
+          className="btn_share"
+          text="Share"
+        ></app-button>
     </div>
   </div>
 </div>

@@ -3,36 +3,35 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { ButtonComponent } from './button/button.component';
 import { InputComponent } from './input/input.component';
-import { GamesContainerComponent } from './games-container/games-container.component';
-import { LibraryCardComponent } from './library-card/library-card.component';
 import { CardComponent } from './card/card.component';
-import { LibraryContainerComponent } from './library-container/library-container.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FilterPipe } from '../pipes/filter.pipe';
+import { SortPipe } from '../pipes/sort.pipe';
 
 @NgModule({
   declarations: [
     ButtonComponent,
     InputComponent,
     CardComponent,
-    GamesContainerComponent,
-    LibraryCardComponent,
-    LibraryContainerComponent,
+    FilterPipe,
+    SortPipe,
   ],
   imports: [
     CommonModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
   ],
   exports: [
     CommonModule,
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,
     ButtonComponent,
     InputComponent,
-    GamesContainerComponent,
     CardComponent,
-    LibraryCardComponent,
-    LibraryContainerComponent,
+    FilterPipe,
+    SortPipe
   ],
 })
 export class SharedModule { }

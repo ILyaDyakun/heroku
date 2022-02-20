@@ -1,6 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { GameService } from 'src/app/services/game.service';
 import { Game } from 'src/app/Game';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-games',
@@ -8,9 +9,13 @@ import { Game } from 'src/app/Game';
   styleUrls: ['./games.component.css']
 })
 export class GamesComponent implements OnInit {
-  @Input() name: string;
   games: Game[] = [];
-  game: Game;
+  filteredGames: string;
+  isAdded: boolean;
+  title = '';
+  adventure = 'adventure';
+  price: number = 0;
+  priceControl = new FormControl('control');
 
   constructor(private gameService: GameService) { }
 
@@ -18,8 +23,10 @@ export class GamesComponent implements OnInit {
     this.gameService.getGames().subscribe((games) => this.games = games);
   }
 
-  searchForGames(str: string) {
-    this.gameService.searchGames(str).subscribe();
+  addToLibrary(game: Game) {
+    this.isAdded = game.isAdded;
+    game.isAdded = true;
+    this.gameService.addGameToLibrary(game).subscribe();
   }
 
 }

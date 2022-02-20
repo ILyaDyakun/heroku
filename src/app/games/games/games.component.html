@@ -6,17 +6,36 @@
       type="text"
       label="Search Games"
       name="name"
-      [(ngModel)]="name"
+      [(ngModel)]="title"
       ngDefaultControl
     ></app-input>
-    <app-button
-      className="btn_search"
-      text="search"
-      (btnClick)="searchForGames(name)"
-    ></app-button>
   </div>
-  <div class="grid_container">
-    <app-games-container></app-games-container>
-    <div class="filter_container"></div>
+  <div class="games_container">
+    <div class="card_container">
+      <div *ngFor="let game of games | filter:title:'title' | sort:price:['price']" class="card">
+        <app-card
+          *ngIf="game.isAdded === false"
+          [game]="game"
+          (onToggleIsAdded)="addToLibrary(game)"
+        ></app-card>
+      </div>
+    </div>
+    <div class="filter_container">
+      <div class="filter_price">
+        <h3>Filter by price</h3>
+        <input min="300" max="1000" value="300" type="range" (input)="price">
+      </div>
+      <div class="filter_tag">
+        <h3>Filter by tag</h3>
+        <form action="#">
+          <input type="checkbox" id="indie">
+          <label for="indie">Indie</label>
+          <input type="checkbox" id="action">
+          <label for="indie">Action</label>
+          <input type="checkbox" id="adventure">
+          <label for="adventure">Adventure</label>
+        </form>
+      </div>
+    </div>
   </div>
 </div>

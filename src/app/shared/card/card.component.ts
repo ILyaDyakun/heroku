@@ -7,6 +7,7 @@ import { Game } from 'src/app/Game';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent implements OnInit {
+  games: Game[] = [];
   @Input() game: Game;
   @Input() isAdded: boolean;
   @Output() onToggleIsAdded: EventEmitter<Game> = new EventEmitter();
