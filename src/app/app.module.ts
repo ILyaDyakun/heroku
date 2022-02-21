@@ -10,7 +10,7 @@ import { GamesModule } from './games/games.module';
 import { SharedModule } from './shared/shared.module';
 import { LibraryModule } from './library/library.module';
 import { FriendsModule } from './friends/friends.module';
-import { FriendsComponent } from './friends/friends/friends.component';
+
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent],
@@ -22,7 +22,7 @@ import { FriendsComponent } from './friends/friends/friends.component';
     SharedModule,
     GamesModule,
     LibraryModule,
-    FriendsComponent,
+    FriendsModule
   ],
 
   providers: [],
