@@ -10,6 +10,7 @@ export class FriendsComponent implements OnInit {
   isSearching: boolean = false;
   searchValue: string = '';
   searchList: any;
+  timer: any;
 
   friends = [
     { userName: 'Bogdan_Koval' },
@@ -22,7 +23,7 @@ export class FriendsComponent implements OnInit {
 
   constructor() {}
 
-  onClick(e: any) {
+  deleteFriend(e: any) {
     const user =
       e.target.parentElement.querySelector('.friend__content').textContent;
 
@@ -40,9 +41,13 @@ export class FriendsComponent implements OnInit {
       return;
     }
 
-    this.isSearching = true;
-    this.searchValue = value;
-    this.searchList = this.friends.filter((el) => regEx.test(el.userName));
+    clearTimeout(this.timer);
+
+    this.timer = setTimeout(() => {
+      this.isSearching = true;
+      this.searchValue = value;
+      this.searchList = this.friends.filter((el) => regEx.test(el.userName));
+    }, 300);
   }
 
   ngOnInit(): void {}
