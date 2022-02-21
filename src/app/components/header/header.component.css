@@ -3,6 +3,11 @@
   align-items: center;
   padding: 10px 20px;
   background-color: white;
+  justify-content: space-between;
+}
+
+.header__list-wrapper {
+  display: flex;
 }
 
 .header__logo {
