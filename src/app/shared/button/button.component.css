@@ -84,13 +84,14 @@
 
 .btn_download,
 .btn_share {
-  width: 7.4rem;
+  width: 48%;
   font-size: 0.9rem;
 }
 
 .btn_download {
   background-color: #6c69ff;
   color: #fff;
+  margin-right: .5rem;
 }
 
 .btn_download:hover {

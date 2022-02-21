@@ -1,1 +1,44 @@
-<p>library works!</p>
+<div class="general_container">
+    <h2>Library</h2>
+    <div class="search_container">
+      <app-input
+        className="form_input"
+        type="text"
+        label="Search Games"
+        name="name"
+        [(ngModel)]="name"
+        ngDefaultControl
+      ></app-input>
+      <app-button
+        className="btn_search"
+        text="Search"
+      ></app-button>
+    </div>
+    <div class="games_container">
+      <div class="card_container">
+        <div *ngFor="let game of games" class="card">
+          <app-card
+            *ngIf="game.isAdded === true"
+            [game]="game"
+          ></app-card>
+        </div>
+      </div>
+      <div class="filter_container">
+        <div class="filter_price">
+          <h3>Filter by price</h3>
+          <input type="range">
+        </div>
+        <div class="filter_tag">
+          <h3>Filter by tag</h3>
+          <form action="#">
+            <input type="checkbox" id="indie">
+            <label for="indie">Indie</label>
+            <input type="checkbox" id="action">
+            <label for="indie">Action</label>
+            <input type="checkbox" id="adventure">
+            <label for="indie">Adventure</label>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
