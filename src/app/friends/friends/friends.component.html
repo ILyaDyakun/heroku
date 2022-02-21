@@ -1,45 +1,45 @@
 <main class="main">
-    <form class="form">
-      <h2 class="form__header">Friends</h2>
-  
-      <label class="form__label" for="search-friends">Search Friends</label>
-  
-      <div class="input_group">
-        <input
-          type="text"
-          class="form__input"
-          id="search-friends"
-          placeholder="Search Friends"
-          (input)="onInput($event)"
-        />
-      </div>
-    </form>
-  
-    <div class="friends-list">
-      <h2 class="friends-list__header" *ngIf="!isSearching; else searchFriends">
-        My Friends
-      </h2>
-      <ng-template #searchFriends>
-        <h2 class="friends-list__header">Search Friends: {{ searchValue }}</h2>
-      </ng-template>
-  
-      <div class="" *ngIf="!isSearching">
-        <div class="friend" *ngFor="let friend of friends; let idx = index">
-          <span class="friend__content">{{ friend.userName }} </span
-          ><button class="btn-delete" (click)="onClick($event)">
-            Remove Friend
-          </button>
-        </div>
-      </div>
-  
-      <div
-        class="friend"
-        *ngFor="let searchFriend of searchList; let idx = index"
-      >
-        <span class="friend__content">{{ searchFriend.userName }} </span
-        ><button class="btn-delete" (click)="onClick($event)">
+  <form class="form">
+    <h2 class="form__header">Friends</h2>
+
+    <label class="form__label" for="search-friends">Search Friends</label>
+
+    <div class="input_group">
+      <input
+        type="text"
+        class="form__input"
+        id="search-friends"
+        placeholder="Search Friends"
+        (input)="onInput($event)"
+      />
+    </div>
+  </form>
+
+  <div class="friends-list">
+    <h2 class="friends-list__header" *ngIf="!isSearching; else searchFriends">
+      My Friends
+    </h2>
+    <ng-template #searchFriends>
+      <h2 class="friends-list__header">Search Friends: {{ searchValue }}</h2>
+    </ng-template>
+
+    <div class="" *ngIf="!isSearching">
+      <div class="friend" *ngFor="let friend of friends; let idx = index">
+        <span class="friend__content">{{ friend.userName }} </span
+        ><button class="btn-delete" (click)="deleteFriend($event)">
           Remove Friend
         </button>
       </div>
     </div>
-  </main>
+
+    <div
+      class="friend"
+      *ngFor="let searchFriend of searchList; let idx = index"
+    >
+      <span class="friend__content">{{ searchFriend.userName }} </span
+      ><button class="btn-delete" (click)="deleteFriend($event)">
+        Remove Friend
+      </button>
+    </div>
+  </div>
+</main>
