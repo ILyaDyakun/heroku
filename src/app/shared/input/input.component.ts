@@ -10,6 +10,7 @@ export class InputComponent implements OnInit {
   @Input() label: string = 'text';
   @Input() type: string = 'text';
   @Input() name: string = '';
+  @Input() id: string = '';
 	@Input() className: string = 'btn_login';
 	@Input() isDisabled = false;
 
