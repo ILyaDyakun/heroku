@@ -6,7 +6,7 @@ import { InputComponent } from './input/input.component';
 import { CardComponent } from './card/card.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FilterPipe } from '../pipes/filter.pipe';
-import { SortPipe } from '../pipes/sort.pipe';
+import { FilterPricePipe } from '../pipes/filter-price.pipe';
 
 @NgModule({
   declarations: [
@@ -14,13 +14,15 @@ import { SortPipe } from '../pipes/sort.pipe';
     InputComponent,
     CardComponent,
     FilterPipe,
-    SortPipe,
+    FilterPricePipe
+
   ],
   imports: [
     CommonModule,
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+  
   ],
   exports: [
     CommonModule,
@@ -31,7 +33,7 @@ import { SortPipe } from '../pipes/sort.pipe';
     InputComponent,
     CardComponent,
     FilterPipe,
-    SortPipe
+    FilterPricePipe
   ],
 })
 export class SharedModule { }

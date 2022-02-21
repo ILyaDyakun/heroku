@@ -12,7 +12,12 @@
   </div>
   <div class="games_container">
     <div class="card_container">
-      <div *ngFor="let game of games | filter:title:'title' | sort:price:['price']" class="card">
+      <div
+        *ngFor="let game of games
+        | filter:title:'title'
+        | filterPrice:price:'price'"
+        class="card"
+        >
         <app-card
           *ngIf="game.isAdded === false"
           [game]="game"
@@ -23,18 +28,17 @@
     <div class="filter_container">
       <div class="filter_price">
         <h3>Filter by price</h3>
-        <input min="300" max="1000" type="range" [(ngModel)]="price">
+        <input min="300" max="1000" step="10" type="range" [(ngModel)]="price">
+        {{ price }}
       </div>
       <div class="filter_tag">
         <h3>Filter by tag</h3>
-        <form action="#">
           <input type="checkbox" id="indie">
           <label for="indie">Indie</label>
           <input type="checkbox" id="action">
-          <label for="indie">Action</label>
+          <label for="action">Action</label>
           <input type="checkbox" id="adventure">
           <label for="adventure">Adventure</label>
-        </form>
       </div>
     </div>
   </div>

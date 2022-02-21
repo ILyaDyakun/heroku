@@ -50,22 +50,22 @@
       "title": "Roblox",
       "description": "Hell’s armies have invaded Earth. Become the Slayer in an epic single-player campaign to conquer demons across dimensions and stop the final destruction of humanity. The only thing they fear... is you.",
       "photo": "roblox",
-      "price": 300,
+      "price": 350,
       "genre": "indie",
       "isAdded": false
     },
     {
       "id": 7,
-      "title": "PUBG",
+      "title": "Among Us",
       "description": "Hell’s armies have invaded Earth. Become the Slayer in an epic single-player campaign to conquer demons across dimensions and stop the final destruction of humanity. The only thing they fear... is you.",
       "photo": "pubg",
-      "price": 750,
+      "price": 850,
       "genre": "adventure",
       "isAdded": false
     },
     {
       "id": 8,
-      "title": "CrossFire",
+      "title": "Solitaire",
       "description": "Hell’s armies have invaded Earth. Become the Slayer in an epic single-player campaign to conquer demons across dimensions and stop the final destruction of humanity. The only thing they fear... is you.",
       "photo": "crossfire",
       "price": 650,
@@ -74,7 +74,7 @@
     },
     {
       "id": 9,
-      "title": "MineCraft",
+      "title": "World of Tanks",
       "description": "Hell’s armies have invaded Earth. Become the Slayer in an epic single-player campaign to conquer demons across dimensions and stop the final destruction of humanity. The only thing they fear... is you.",
       "photo": "minecraft",
       "price": 600,
@@ -83,7 +83,7 @@
     },
     {
       "id": 10,
-      "title": "Fortnite",
+      "title": "Apex Legends",
       "description": "Hell’s armies have invaded Earth. Become the Slayer in an epic single-player campaign to conquer demons across dimensions and stop the final destruction of humanity. The only thing they fear... is you.",
       "photo": "fortnite",
       "price": 450,
@@ -92,7 +92,7 @@
     },
     {
       "id": 11,
-      "title": "League of Legends",
+      "title": "Lineage",
       "description": "Hell’s armies have invaded Earth. Become the Slayer in an epic single-player campaign to conquer demons across dimensions and stop the final destruction of humanity. The only thing they fear... is you.",
       "photo": "league",
       "price": 900,
@@ -101,7 +101,7 @@
     },
     {
       "id": 12,
-      "title": "Roblox",
+      "title": "Perfect World",
       "description": "Hell’s armies have invaded Earth. Become the Slayer in an epic single-player campaign to conquer demons across dimensions and stop the final destruction of humanity. The only thing they fear... is you.",
       "photo": "roblox",
       "price": 300,
