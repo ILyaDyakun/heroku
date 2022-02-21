@@ -20,8 +20,8 @@ export class InputComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  public onValueChange(event: any): void {
-    this.valueChange.emit(event.target.value)
+  public onValueChange(event: string): void {
+    this.valueChange.emit(event)
   }
 
 }
