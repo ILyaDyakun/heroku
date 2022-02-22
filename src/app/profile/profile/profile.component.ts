@@ -11,7 +11,8 @@ export class ProfileComponent implements OnInit {
   public user: User | undefined = undefined;
 
   constructor(private authService: AuthService) { }
-
+  
+  
   ngOnInit(): void {
     this.initUser();
   }
@@ -19,5 +20,6 @@ export class ProfileComponent implements OnInit {
   public initUser(): void {
     const token = localStorage.getItem('token');
     this.user = this.authService.getUser(token); 
+    console.log(name);
   }
 }
