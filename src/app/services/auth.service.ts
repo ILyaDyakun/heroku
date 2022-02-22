@@ -6,7 +6,7 @@ import { DataServices } from './data.service';
   providedIn: 'root'
 })
 export class AuthService {
-  public user: User | undefined = undefined; 
+  public user: User | undefined = undefined;
 
   constructor(private dataService: DataServices) { }
 
@@ -15,7 +15,7 @@ export class AuthService {
     const index = users.findIndex(user => user.email === email && user.password === password);
     if (index !== -1) {
       localStorage.setItem('token', users[index].token)
-    } 
+    }
     return index !== -1;
   }
 
