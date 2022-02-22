@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { User } from '../interfaces/user.interface';
 
 const userList = [
   {
@@ -100,8 +101,18 @@ export class DataServices {
 
   constructor() { }
   
-  public getUserList() {
+  public getUserList(): User[] {
     return userList;
   } 
+
+  public getUser(token: string | null): User | undefined {
+    return this.getUserList().find(user => user.token === token)
+  }
+
+  public updateUser(user: User): void {
+    const id = user.id;
+    const index = this.getUserList().findIndex(user => user.id === id);
+    this.getUserList().splice(index, 1, user);
+  }
 }
 
