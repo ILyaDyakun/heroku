@@ -36,11 +36,6 @@ export class FriendsComponent implements OnInit {
     const value = e.target.value;
     const regEx = new RegExp(`^${value}`, 'i');
 
-    if (value === '') {
-      this.isSearching = false;
-      return;
-    }
-
     clearTimeout(this.timer);
 
     this.timer = setTimeout(() => {
@@ -48,6 +43,11 @@ export class FriendsComponent implements OnInit {
       this.searchValue = value;
       this.searchList = this.friends.filter((el) => regEx.test(el.userName));
     }, 300);
+
+    if (value === '') {
+      this.isSearching = false;
+      return;
+    }
   }
 
   ngOnInit(): void {}
