@@ -19,6 +19,10 @@ export class FriendsComponent implements OnInit {
     { userName: 'Adriy_Ivanov' },
     { userName: 'Bohdan_Kulik' },
     { userName: 'Taras_Kozak' },
+    { userName: 'BogdanFranko' },
+    { userName: 'John_Kennedy' },
+    { userName: 'YuriiGagarin' },
+    { userName: 'George Washington' },
   ];
 
   constructor() {}
