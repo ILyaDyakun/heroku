@@ -1,6 +1,8 @@
 <div class="input_container">
   <label class="label" for=[name]>{{label}}</label>
   <input
+    (change)="onValueChange(input.value)"
+  #input
 	[name]="name"
 	[type]="type"
 	[class]="className"

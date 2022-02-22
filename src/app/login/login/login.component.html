@@ -1,22 +1,24 @@
 <div class="form">
     <h3 class="form_title">Sign in</h3>
-    <app-input
+    <div class="wrapper_input">
+      <app-input
         (valueChange)="onEmailChange($event)"
         [label]="'Email'"
         [type]="'email'"
         [name]="'email'"
         [className]="'form_input'"
-    ></app-input>
+      ></app-input>
 
-    <app-input
+      <app-input
         (valueChange)="onPasswordChange($event)"
         [label]="'Password'"
         [type]="'password'"
         [name]="'password'"
         [className]="'form_input'"
-    ></app-input>
+      ></app-input>
+    </div>
 
-    <app-button 
+    <app-button
         [type]="'button'"
         [isDisabled]="false"
         [className]="'btn_login'"

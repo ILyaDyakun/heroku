@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
 
   public login() {
     const isLoginned = this.auth.login(this.email, this.password)
- 
+
     if (isLoginned) {
       this.router.navigateByUrl('/profile')
     }
