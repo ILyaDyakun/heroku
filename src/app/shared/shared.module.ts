@@ -7,6 +7,9 @@ import { CardComponent } from './card/card.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FilterPipe } from '../pipes/filter.pipe';
 import { FilterPricePipe } from '../pipes/filter-price.pipe';
+import { FilterIndiePipe } from '../pipes/filter-indie.pipe';
+import { FilterActionPipe } from '../pipes/filter-action.pipe';
+import { FilterAdventurePipe } from '../pipes/filter-adventure.pipe';
 
 @NgModule({
   declarations: [
@@ -14,6 +17,9 @@ import { FilterPricePipe } from '../pipes/filter-price.pipe';
     InputComponent,
     CardComponent,
     FilterPipe,
+    FilterIndiePipe,
+    FilterActionPipe,
+    FilterAdventurePipe,
     FilterPricePipe
 
   ],
@@ -33,6 +39,9 @@ import { FilterPricePipe } from '../pipes/filter-price.pipe';
     InputComponent,
     CardComponent,
     FilterPipe,
+    FilterIndiePipe,
+    FilterActionPipe,
+    FilterAdventurePipe,
     FilterPricePipe
   ],
 })

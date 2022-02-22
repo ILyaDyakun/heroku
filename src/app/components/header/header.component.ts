@@ -10,16 +10,16 @@ import { AuthService } from 'src/app/services/auth.service';
 export class HeaderComponent implements OnInit, DoCheck {
   public isAuth = false;
 
-  constructor(private authService: AuthService, private router: Router) { }
+  constructor(private authService: AuthService, private router: Router) {}
 
-  ngOnInit(): void { }
+  ngOnInit(): void {}
 
   ngDoCheck(): void {
-    this.isAuth = this.authService.isAuthenticated();  
+    this.isAuth = this.authService.isAuthenticated();
   }
 
   public logOut(): void {
     localStorage.removeItem('token');
-    this.router.navigateByUrl('/login')
+    this.router.navigateByUrl('/login');
   }
 }
