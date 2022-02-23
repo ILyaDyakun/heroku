@@ -106,7 +106,7 @@
       "photo": "roblox",
       "price": 300,
       "genre": "indie",
-      "isAdded": false
+      "isAdded": true
     }
   ]
 }

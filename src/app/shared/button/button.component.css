@@ -1,5 +1,4 @@
 .btn_login,
-.btn_search,
 .btn_friend_add,
 .btn_friend_remove,
 .btn_library_add,
@@ -27,14 +26,12 @@
 }
 
 .btn_login,
-.btn_search,
 .btn_friend_add,
 .btn_library_add {
   background-color: #6c69ff;
 }
 
 .btn_login:hover,
-.btn_search:hover,
 .btn_friend_add:hover,
 .btn_library_add:hover {
   background-color: #b2000e;
@@ -49,7 +46,6 @@
 }
 
 .btn_login,
-.btn_search,
 .btn_friend_add,
 .btn_friend_remove,
 .btn_library_add,
@@ -61,10 +57,6 @@
 .btn_login {
   width: 12.5rem;
   font-size: 1rem;
-}
-
-.btn_search {
-  width: 4.7rem;
 }
 
 .btn_friend_add {
