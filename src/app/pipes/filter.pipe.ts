@@ -13,7 +13,7 @@ export class FilterPipe implements PipeTransform {
     }
 
     for (const item of value) {
-      if (item[propName].includes(filteredGames)) {
+      if (item[propName].toLowerCase().includes(filteredGames.toLowerCase())) {
         resultArray.push(item);
       }
     }
