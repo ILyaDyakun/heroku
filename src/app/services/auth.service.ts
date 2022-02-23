@@ -22,9 +22,5 @@ export class AuthService {
   public isAuthenticated(): boolean {
     return !!localStorage.getItem('token')
   }
-
-  public getUser(token: string | null): User | undefined {
-    return this.dataService.getUserList().find(user => user.token === token)
-  }
 }
 
