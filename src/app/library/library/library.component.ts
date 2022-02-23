@@ -5,7 +5,7 @@ import { Game } from 'src/app/Game';
 @Component({
   selector: 'app-library',
   templateUrl: './library.component.html',
-  styleUrls: ['./library.component.css']
+  styleUrls: ['../../games/games/games.component.css']
 })
 export class LibraryComponent implements OnInit {
   games: Game[] = [];

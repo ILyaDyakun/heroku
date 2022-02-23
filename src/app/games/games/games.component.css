@@ -171,6 +171,12 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 @media screen and (max-width: 720px) {
+  .general_container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
   .games_container {
     display: grid;
     grid-template-columns: 1fr;
@@ -183,5 +189,9 @@ input[type=range]:focus::-ms-fill-upper {
 
   .card_container {
     grid-template-columns: 1fr;
+  }
+
+  .filter_container {
+    padding-left: 2rem;
   }
 }
