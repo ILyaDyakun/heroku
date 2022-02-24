@@ -1,0 +1,37 @@
+<div class="form">
+    <h3 class="form_title">Profile</h3>
+    <app-input
+        [label]="'Username'"
+        [type]="'text'"
+        [name]="'Username'"
+        [className]="'form_input'"
+        [value]="user.firstName+' '+user.lastName"
+        (valueChange)="onUserNameChange($event)"
+    ></app-input>
+
+    <app-input
+        [label]="'Email'"
+        [type]="'email'"
+        [name]="'email'"
+        [className]="'form_input'"
+        [value]="user.email"
+        (valueChange)="onMailChange($event)"
+    ></app-input>
+
+    <app-input
+        [label]="'Age'"
+        [type]="'text'"
+        [name]="'age'"
+        [className]="'form_input'"
+        [value]="user.age"
+        (valueChange)="onAgeChange($event)"
+    ></app-input>
+
+    <app-button 
+        [type]="'button'"
+        [isDisabled] = "false"
+        [className] = "'btn_login'"
+        [text]="'Save'"
+        (btnClick)="updateUser()"
+    ></app-button>
+</div>

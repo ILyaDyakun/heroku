@@ -1,0 +1,32 @@
+<header class="header" *ngIf="isAuth">
+  <div class="header__list-wrapper">
+    <img 
+      src="../../../assets/img/logo.svg" 
+      alt="steam logo" 
+      class="header__logo" 
+      />
+
+    <ul class="header__list">
+      <li class="header__item">
+        <a routerLink="/games" class="header__link">Games</a>
+      </li>
+      <li class="header__item">
+        <a routerLink="/library" class="header__link">Library</a>
+      </li>
+      <li class="header__item">
+        <a routerLink="/friends" class="header__link">Friends</a>
+      </li>
+      <li class="header__item">
+        <a routerLink="/profile" class="header__link">Profile</a>
+      </li>
+    </ul>
+  </div>
+
+  <app-button 
+    [type]="'button'" 
+    [isDisabled]="false" 
+    [className]="'btn_login'" 
+    [text]="'LogOut'" 
+    (btnClick)="logOut()">
+  </app-button>
+</header>

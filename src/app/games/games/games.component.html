@@ -1,0 +1,45 @@
+<div class="general_container">
+  <h2>Games</h2>
+  <div class="search_container">
+    <app-input
+      className="form_input"
+      type="text"
+      label="Search Games"
+      name="name"
+      [(ngModel)]="title"
+      ngDefaultControl
+    ></app-input>
+  </div>
+  <div class="games_container">
+    <div class="card_container">
+      <div
+        *ngFor="let game of games
+        | filter:title:'title'
+        | filterPrice:price:'price'"
+        class="card"
+        >
+        <app-card
+          *ngIf="game.isAdded === false"
+          [game]="game"
+          (onToggleIsAdded)="addToLibrary(game)"
+        ></app-card>
+      </div>
+    </div>
+    <div class="filter_container">
+      <div class="filter_price">
+        <h3>Filter by price</h3>
+        <input min="300" max="1000" step="10" type="range" [(ngModel)]="price">
+        {{ price }}
+      </div>
+      <div class="filter_tag">
+        <h3>Filter by tag</h3>
+          <input type="checkbox" id="indie">
+          <label for="indie">Indie</label>
+          <input type="checkbox" id="action">
+          <label for="action">Action</label>
+          <input type="checkbox" id="adventure">
+          <label for="adventure">Adventure</label>
+      </div>
+    </div>
+  </div>
+</div>
