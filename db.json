@@ -7,7 +7,7 @@
       "photo": "pubg",
       "price": 750,
       "genre": "adventure",
-      "isAdded": false
+      "isAdded": true
     },
     {
       "id": 2,
@@ -25,7 +25,7 @@
       "photo": "minecraft",
       "price": 600,
       "genre": "indie",
-      "isAdded": false
+      "isAdded": true
     },
     {
       "id": 4,
@@ -43,7 +43,7 @@
       "photo": "league",
       "price": 900,
       "genre": "action",
-      "isAdded": false
+      "isAdded": true
     },
     {
       "id": 6,
@@ -106,7 +106,7 @@
       "photo": "roblox",
       "price": 300,
       "genre": "indie",
-      "isAdded": false
+      "isAdded": true
     }
   ]
 }

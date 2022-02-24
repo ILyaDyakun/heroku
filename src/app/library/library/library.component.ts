@@ -5,13 +5,18 @@ import { Game } from 'src/app/Game';
 @Component({
   selector: 'app-library',
   templateUrl: './library.component.html',
-  styleUrls: ['./library.component.css']
+  styleUrls: ['../../games/games/games.component.css']
 })
 export class LibraryComponent implements OnInit {
   games: Game[] = [];
-  name: string;
+  game: Game;
+  filteredGames: string;
   isAdded: boolean;
-  isSearching: boolean = false;
+  title = '';
+  indie = '';
+  action = '';
+  adventure = '';
+  price: number = 950;
 
   constructor(private gameService: GameService) { }
 
@@ -19,9 +24,10 @@ export class LibraryComponent implements OnInit {
     this.gameService.getGames().subscribe((games) => this.games = games);
   }
 
-  searchForGames(str: string) {
-    this.isSearching = true;
-    this.gameService.searchGames(str).subscribe();
+  removeFromLibrary(game: Game) {
+    this.isAdded = game.isAdded;
+    game.isAdded = false;
+    this.gameService.addGameToLibrary(game).subscribe();
   }
 
 }

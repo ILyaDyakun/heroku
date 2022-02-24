@@ -8,7 +8,6 @@ import { Game } from 'src/app/Game';
   styleUrls: ['./games.component.css']
 })
 export class GamesComponent implements OnInit {
-  
   games: Game[] = [];
   game: Game;
   filteredGames: string;
