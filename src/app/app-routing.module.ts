@@ -35,9 +35,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [
-  
-  ],
+  declarations: [],
   imports: [
     RouterModule.forRoot(routes)
   ],
